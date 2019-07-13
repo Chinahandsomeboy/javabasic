@@ -25,6 +25,7 @@ public class AtomLearn2 {
             thread.start();
         }
         Thread.sleep(2000);
+//        使用.get()获取
         System.out.println(MyCount1.count.get());
     }
 
@@ -42,6 +43,7 @@ public class AtomLearn2 {
     }
 
     private static class MyCount1 {
+//        原子操作
         static AtomicInteger count = new AtomicInteger(0);
     }
 }
